@@ -9,8 +9,7 @@ header{
     flex-direction: column;
 }
 
-header > div {
-    /* background-color: purple; */
+header > div , #titre{
     color: white;
     margin: 0;
     padding: 10px;
@@ -19,12 +18,22 @@ header > div {
     text-align: center;
 }
 
+#titre ,#indexFooter{
+    background-color: #1b90bb; 
+    color : white;
+}
+
+#indexdesc-container {
+    display: flex;
+    flex-direction : column;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333; 
+    background-color: #08558d; 
     display: flex;
     justify-content: center; 
 }
@@ -42,7 +51,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #555; 
+    background-color: #095b97; 
 }
 
 button {
@@ -61,10 +70,21 @@ button > a {
     color: #fff;
 }
 
-img:hover {
+
+header > img:hover {
     transform: scale(1.1); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#imgComparaison > img{
+    width:900px;
+    height:500px;
+}
+
+#imgComparaison{
+    display:flex;
+    flex-direction: column;
 }
 
 .flex-container {
@@ -73,10 +93,14 @@ img:hover {
   flex-direction : column;
 }
 
-.flex-container > div {
+.flex-container > div , .telechargement-buttons-container {
     border: 2px solid black;
     border-radius: 5px;
     margin: 10px;
+}
+
+.buttons{
+    padding : 5px;
 }
 
 .flex-container > div > h3,p {
@@ -90,6 +114,8 @@ img:hover {
 }
 
 
+
+
 footer{
     display:flex;
     height: 80px;
@@ -101,6 +127,7 @@ footer{
     background-color : #2C0B6E;
     color : white;
 }
+
 
 
 
