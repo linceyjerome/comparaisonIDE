@@ -1,0 +1,107 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > div {
+    /* background-color: purple; */
+    color: white;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; 
+    display: flex;
+    justify-content: center; 
+}
+
+nav li {
+    margin: 0 10px; 
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555; 
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button > a {
+    text-decoration : none;
+    color: #fff;
+}
+
+img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-container {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction : column;
+}
+
+.flex-container > div {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.flex-container > div > h3,p {
+    margin:10px;
+}
+
+.flex-container > div > #btnEclipse {
+    margin:10px;
+    border: none;
+    background-color : #2C0B6E;
+}
+
+
+footer{
+    display:flex;
+    height: 80px;
+    justify-content: center;
+  align-items: center;
+}
+
+#eclipseFooter,#eclipseHeader{
+    background-color : #2C0B6E;
+    color : white;
+}
+
+
+
+
