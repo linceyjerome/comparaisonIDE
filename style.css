@@ -51,7 +51,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #095b97; 
+    background-color: #08679f; 
 }
 
 button {
@@ -101,6 +101,10 @@ header > img:hover {
 
 .buttons{
     padding : 5px;
+}
+
+.buttons > button:hover{
+    background-color: #1d91c0;
 }
 
 .flex-container > div > h3,p {
