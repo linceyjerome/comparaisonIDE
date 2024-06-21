@@ -28,6 +28,25 @@ header > div , #titre{
     flex-direction : column;
 }
 
+#vsHeader,#vsFooter,#btnVS{
+    background-color: #8853bd; 
+    color : white;
+}
+
+#btnVS,#btnvsc,#btnIntellij{
+    margin:10px;
+}
+
+#intellijHeader,#intellijFooter,#btnIntellij{
+    background: linear-gradient(45deg, #ea4a60, #3179e0, #9059a8);
+    color:white;
+}
+
+#vscHeader,#vscFooter,#btnvsc{
+    background-color: #087dce; 
+    color : white;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -116,8 +135,6 @@ header > img:hover {
     border: none;
     background-color : #2C0B6E;
 }
-
-
 
 
 footer{
