@@ -15,7 +15,7 @@
         <div>
             <h1>Visual Studio : Pour le Développement.NET et Plus</h1>
         </div>
-        <img src="/img/vs.png" alt="Visual-studio">
+        <img class="imgVS" src="/img/vs.png" alt="Visual-studio">
     </header>
 
     <h1>Visual Studio</h1>
@@ -91,7 +91,28 @@
     </div>
 
 
-    <footer id="vsFooter">© Lincey Jerome | TP2 - Descriptif des principaux IDE</footer>
+    <footer id="vsFooter"><strong>© Lincey Jerome | TP2 - Descriptif des principaux IDE</strong></footer>
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+
+    <script>
+
+        let mybutton = document.getElementById("btnTop");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 </body>

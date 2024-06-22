@@ -11,12 +11,9 @@
 
 <body>
 
-    <header>
-        <div id="eclipseHeader">
-            <h1>Eclipse IDE : Un environnement de développement puissant</h1>
-        </div>
-
-        <img src="/img/Eclipse.png" alt="Tableau Recapitulatif IDE">
+    <header id="eclipseHeader">
+        <h1>Eclipse IDE : Un environnement de développement puissant</h1>
+        <img class="imgEclipse" src="/img/eclipse_bckgr_logo_fc_lg.jpg" alt="Tableau Recapitulatif IDE">
     </header>
 
     <h1>Eclipse</h1>
@@ -81,6 +78,27 @@
     </div>
 
     <footer id="eclipseFooter"><strong>© Lincey Jerome | TP2 - Descriptif des principaux IDE</strong></footer>
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+
+    <script>
+
+        let mybutton = document.getElementById("btnTop");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 

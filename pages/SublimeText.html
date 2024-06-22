@@ -11,18 +11,17 @@
 
 <body>
 
-    <header>
-        <div class="container">
+    <header id="sumblimeHeader">
+        <div>
             <h1>Sublime Text : Un Éditeur de Texte Rapid et Puissant</h1>
         </div>
-        <img src="" alt="">
+        <img class="imgSublime" src="/img/sublimetext.png" alt="">
 
     </header>
 
     <h1>Sublime Text</h1>
 
     <div class="flex-container">
-
 
         <p>Sublime Text est un éditeur de texte rapide et puissant, idéal pour le développement front-end. Il est
             apprécié pour sa légèreté, sa rapidité, et sa personnalisation. Avec des fonctionnalités comme la
@@ -64,7 +63,7 @@
         <div class="limite-container">
             <h3>Limite</h3>
             <ol>
-                <li>Coût</li>
+
                 <li>Fonctionnalités Intégrées Limitées</li>
                 <li>Absence de Support Officiel pour Certains Langages</li>
                 <li>Configuration et Personnalisation Manuelle</li>
@@ -75,17 +74,39 @@
         </div>
 
         <div>
-            <button id="btnEclipse">
+            <button id="btnSublime">
                 <i class="fa-solid fa-download" style="color: white;"></i>
                 <a href="https://www.eclipse.org/downloads/packages/installer" target="_blank">Télécharger Eclipse </a>
             </button>
 
             <a href="index.html">Retour a la page d'acceuil</a>
         </div>
+
+
     </div>
 
+    <footer id="footerSublime"><strong>© Lincey Jerome | TP2 - Descriptif des principaux IDE</strong></footer>
 
-    <footer id="">© Lincey Jerome | TP2 - Descriptif des principaux IDE</footer>
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+
+    <script>
+
+        let mybutton = document.getElementById("btnTop");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 

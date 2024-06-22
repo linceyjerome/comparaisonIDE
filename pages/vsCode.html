@@ -10,10 +10,9 @@
 </head>
 
 <body>
-    <header>
-        <div id="vscHeader">
-            <h1>Visual Studio Code : Un IDE Léger et Puissant</h1>
-        </div>
+    <header id="vscHeader">
+        <h1>Visual Studio Code : Un IDE Léger et Puissant</h1>
+        <img src="/img/VS-Code.png" alt="vs-code-img">
     </header>
 
     <h1>Visual Studio Code</h1>
@@ -104,7 +103,28 @@
     </div>
 
 
-    <footer id="vscFooter">© Lincey Jerome | TP2 - Descriptif des principaux IDE</footer>
+    <footer id="vscFooter"><strong>© Lincey Jerome | TP2 - Descriptif des principaux IDE</strong></footer>
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+
+    <script>
+
+        let mybutton = document.getElementById("btnTop");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 
