@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* page principale */
 header{
     display : flex;
     align-items: center;
@@ -18,34 +18,6 @@ header > div , #titre{
     text-align: center;
 }
 
-#titre ,#indexFooter{
-    background-color: #1b90bb; 
-    color : white;
-}
-
-#indexdesc-container {
-    display: flex;
-    flex-direction : column;
-}
-
-#vsHeader,#vsFooter,#btnVS{
-    background-color: #8853bd; 
-    color : white;
-}
-
-#btnVS,#btnvsc,#btnIntellij{
-    margin:10px;
-}
-
-#intellijHeader,#intellijFooter,#btnIntellij{
-    background: linear-gradient(45deg, #ea4a60, #3179e0, #9059a8);
-    color:white;
-}
-
-#vscHeader,#vscFooter,#btnvsc{
-    background-color: #087dce; 
-    color : white;
-}
 
 nav ul {
     list-style-type: none;
@@ -92,20 +64,15 @@ button > a {
 
 header > img:hover {
     transform: scale(1.1); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#imgComparaison > img{
-    width:900px;
-    height:500px;
+li{
+    padding: 3px;
 }
 
-#imgComparaison{
-    display:flex;
-    flex-direction: column;
-}
-
+/* class commun a tous les pages */
 .flex-container {
     display: flex;
   flex-wrap: wrap;
@@ -142,13 +109,64 @@ footer{
     height: 80px;
     justify-content: center;
   align-items: center;
+  font: 15px ;
 }
+
+
+
+/* id et class des footer , header , bouton et autres element */
 
 #eclipseFooter,#eclipseHeader{
     background-color : #2C0B6E;
     color : white;
 }
 
+#imgComparaison > img{
+    width:900px;
+    height:500px;
+}
+
+#imgComparaison{
+    display:flex;
+    flex-direction: column;
+}
+
+#titre ,#indexFooter{
+    background-color: #1b90bb; 
+    color : white;
+}
+
+#indexdesc-container {
+    display: flex;
+    flex-direction : column;
+}
+
+#vsHeader,#vsFooter,#btnVS{
+    background-color: #8853bd; 
+    color : white;
+}
+
+#btnVS,#btnvsc,#btnIntellij{
+    margin:10px;
+}
+
+
+#intellijHeader,#intellijFooter{
+    background: linear-gradient(45deg, #ea4a60, #3179e0, #9059a8);
+    color:white;
+
+}
+
+.imgIntellij{
+    height: 50%;
+    width: 50%;
+    border-radius: 2%;
+}
+
+#vscHeader,#vscFooter,#btnvsc{
+    background-color: #087dce; 
+    color : white;
+}
 
 
 
